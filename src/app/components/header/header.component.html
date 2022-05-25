@@ -1,0 +1,23 @@
+<header>
+    <div class="navbar shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i style="font-size: 30px; color: rgb(255, 255, 255); padding-left: 10%; padding-top: 7px; " class="fas fa-shopping-bag ">&nbsp;</i>
+                <strong style="font-family: poppins;color:rgb(255, 255, 255);font-size: 30px;">
+                    Quickshop
+                </strong>
+                <div style="padding-top: 7px;" class="form-group">
+                    <input style="background: rgb(255, 255, 255);  " type="text" class="form-control shadow-sm" placeholder="search products">
+                </div>
+                <span class="fas fa-search search-icon">
+                    
+                </span>
+            
+        </div>
+        <button routerLink="/cart" style="margin-right: 5%;" class="btn btn-primary btn-cart">
+            <i style="font-size: 30px; " class="fas fa-cart-plus">
+               
+            </i>
+            <div style="font-size: 10px;color: rgb(206, 62, 62)" class="badge bg-light">{{totalItem}}</div>
+        </button>
+    </div>
+</header>

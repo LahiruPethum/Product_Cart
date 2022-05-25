@@ -1,0 +1,43 @@
+<div style = "margin-bottom: 30px;" class="card-top container-fluid shadow-sm" >
+    <div class="container d-flex">
+        <div class="item shadow">
+            <a >
+                <img src="../../../assets/images/pngtree-box-icon-image_1130328.jpg" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item shadow">
+            <a >
+                <img src="../../../assets/images/pngtree-box-icon-image_1130328.jpg" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item shadow">
+            <a >
+                <img src="../../../assets/images/pngtree-box-icon-image_1130328.jpg" alt="">
+                <h6>Fasion</h6>
+            </a>
+        </div>
+        <div class="item shadow">
+            <a >
+                <img src="../../../assets/images/pngtree-box-icon-image_1130328.jpg" alt="">
+                <h6>Jueleriess</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div style = "margin-top: 30px;" class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img  src="{{item.image}}"  alt="">
+                <h5 style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis">{{item.description}}</p>
+                <p>Price: <strong>{{item.price}}</strong></p>
+                <span><a (click)="addToCart(item)">Add To Cart</a></span>
+            </div>
+        </ng-container>
+      
+    </div>
+</div>

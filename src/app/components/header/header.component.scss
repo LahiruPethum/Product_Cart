@@ -1,0 +1,27 @@
+
+*{
+    background: rgb(206, 62, 62);
+}
+.form-control{
+border-radius: 50px;
+width: 600px;
+margin-left: 30px;
+border-style: none;
+}
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    right: 36%;
+    top: 28px;
+    color: rgb(206, 62, 62);
+background: white;
+
+}
+.btn-cart{
+    background-color: transparent;
+    border-style: none;
+}
+.btn-cart:hover{
+    background-color: transparent;
+    border-style: none;
+}
