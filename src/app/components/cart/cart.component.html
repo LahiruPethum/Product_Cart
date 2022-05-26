@@ -33,6 +33,14 @@
                         </td>
                         
                     </tr>
+                    <tr>
+                    <br/>
+                        <td colspan="4"></td>
+                        <td><button (click)="emptyCart()" class="btn btn-danger">Delete All</button></td>
+                        <td><button routerLink="/products" class="btn btn-light">Shop More</button></td>
+                        <td><button  class="btn btn-dark">Check Out</button></td>
+                        <td><strong>Total : ${{grandTotal}}</strong>  </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -58,6 +66,6 @@
             <span><a routerLink="/products"></a></span>
         </div>
     </div>
-</ng-container>
+</ng-container> 
 
 
